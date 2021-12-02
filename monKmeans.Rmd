@@ -1,0 +1,38 @@
+---
+title: "tp kmeans"
+author: "cedric pesquet"
+date: "30/11/2021"
+output: html_document
+---
+
+Tests avec differents nombres de clusters de monKmeans sur le jeu de données Xtrain.txt
+
+Ceci est ma fonction monKmeans.
+
+Elle reprend la méthode de la classification ascendante hiérarchique avec l'algorithme de la méthode kmeans.
+
+monKmeans(donnees,K,EchellePlot)
+
+donnees: Jeu de données utilisé , donnees pour utiliser Xtrain.txt
+K : nombre de clusters souhaité
+EchellePlot : pour ajuster l'échelle du plot en fonction du jeu de données (7 est bon pour utiliser Xtrain.txt)
+
+Veillez à bien regler le dossier d'utilisation dans avec R pour pouvoir utiliser la fonction et le jeu de données Xtrain.txt
+
+Un jeu de test est fourni , il s'agit de monKmeans.html
+
+```{r}
+source("monKmeans.R")
+
+monKmeans(donnees,5,7)
+```
+
+```{r}
+monKmeans(donnees,3,7)
+```
+
+```{r}
+monKmeans(donnees,10,7)
+```
+
+Créé par Cédric PESQUET
